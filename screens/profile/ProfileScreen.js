@@ -1,10 +1,7 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
-import { useAuth } from "../../context/AuthContext";
+import { View, Text, Image, StyleSheet } from "react-native";
 
 export default function ProfileScreen() {
-  const { logout } = useAuth();
-
   const user = {
     name: "Zulfikar",
     email: "zulfikarhasan118@gmail.com",
@@ -33,10 +30,6 @@ export default function ProfileScreen() {
           <Text style={styles.infoLabel}>Kopi favorit</Text>
           <Text style={styles.infoValue}>Kopi Susu</Text>
         </View>
-
-        <TouchableOpacity style={styles.logoutButton} onPress={logout}>
-          <Text style={styles.logoutText}>Logout</Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -105,18 +98,5 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "600",
     color: "#111827",
-  },
-  logoutButton: {
-    marginTop: 24,
-    alignSelf: "stretch",
-    backgroundColor: "#EF4444",
-    paddingVertical: 12,
-    borderRadius: 12,
-    alignItems: "center",
-  },
-  logoutText: {
-    color: "#FFFFFF",
-    fontSize: 16,
-    fontWeight: "600",
   },
 });
