@@ -40,7 +40,7 @@ export default function ProductDetailScreen() {
       <View style={styles.card}>
         <Image source={getImageSource()} style={styles.image} />
         <Text style={styles.title}>{name}</Text>
-        <Text style={styles.price}>Rp {price.toLocaleString("id-ID")}</Text>
+        <Text style={styles.price}>Rp {price}</Text>
         <Text style={styles.description}>
           Nikmati kopi pilihan dengan rasa terbaik untuk menemani harimu.
         </Text>

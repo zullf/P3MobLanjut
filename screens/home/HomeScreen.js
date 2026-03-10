@@ -37,7 +37,7 @@ export default function HomeScreen() {
           </View>
         ) : null}
       </View>
-      <Text style={styles.price}>Rp {item.price.toLocaleString("id-ID")}</Text>
+      <Text style={styles.price}>Rp {item.price}</Text>
       <Text style={styles.cardSubtitle}>Tap untuk lihat detail</Text>
     </TouchableOpacity>
   );

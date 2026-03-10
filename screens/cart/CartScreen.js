@@ -23,13 +23,13 @@ export default function CartScreen() {
       <View style={styles.itemLeft}>
         <Text style={styles.itemName}>{item.name}</Text>
         <Text style={styles.itemPrice}>
-          Rp {item.price.toLocaleString("id-ID")}
+          Rp {item.price}
         </Text>
       </View>
       <View style={styles.itemRight}>
         <Text style={styles.itemQty}>x{item.qty}</Text>
         <Text style={styles.itemSubtotal}>
-          Rp {(item.price * item.qty).toLocaleString("id-ID")}
+          Rp {(item.price * item.qty)}
         </Text>
       </View>
     </View>
