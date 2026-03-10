@@ -35,7 +35,6 @@ export default function RegisterScreen({ navigation }) {
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
-          autoCapitalize="none"
         />
 
         <TextInput
@@ -44,7 +43,6 @@ export default function RegisterScreen({ navigation }) {
           placeholderTextColor="#999"
           value={password}
           onChangeText={setPassword}
-          secureTextEntry
         />
 
         <TouchableOpacity

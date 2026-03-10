@@ -26,7 +26,6 @@ export default function LoginScreen({ navigation }) {
           value={email}
           onChangeText={setEmail}
           keyboardType="email-address"
-          autoCapitalize="none"
         />
 
         <TextInput
@@ -35,7 +34,6 @@ export default function LoginScreen({ navigation }) {
           placeholderTextColor="#999"
           value={password}
           onChangeText={setPassword}
-          secureTextEntry
         />
 
         <TouchableOpacity style={styles.primaryButton} onPress={login}>

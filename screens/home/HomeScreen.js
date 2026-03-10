@@ -17,21 +17,6 @@ export default function HomeScreen() {
     { id: "3", name: "Cappuccino", price: 20000, tag: "Creamy" },
   ];
 
-  useEffect(() => {
-    const unsubscribeFocus = navigation.addListener("focus", () => {
-      console.log("Home screen dibuka");
-    });
-
-    const unsubscribeBlur = navigation.addListener("blur", () => {
-      console.log("Home screen ditutup");
-    });
-
-    return () => {
-      unsubscribeFocus();
-      unsubscribeBlur();
-    };
-  }, [navigation]);
-
   const handlePressCoffee = (item) => {
     navigation.navigate("ProductDetail", {
       name: item.name,
